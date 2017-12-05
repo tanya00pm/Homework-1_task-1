@@ -9,7 +9,7 @@ public class BubbleSortApplication {
         app.startApplication();
     }
 
-    public void PrintArray(double arr[]) {
+    public void printArray(double arr[]) {
         // print array on console method
 
         for (int i=0; i< arr.length; i++)
@@ -26,15 +26,15 @@ public class BubbleSortApplication {
         double mas[] = {16, 78, 6, 82, 67, 55, 9, 4, 88};
 
         System.out.println("Initial array:");
-        this.PrintArray(mas);
+        this.printArray(mas);
 
         System.out.println("\nResult array:");
 
         // bubble sorting
-        cl.Sorting(mas);
+        cl.runSorting(mas);
 
         // result array
-        this.PrintArray(mas);
+        this.printArray(mas);
 
     }
 }

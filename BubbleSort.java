@@ -6,7 +6,7 @@ public class BubbleSort {
         // constructor
     }
 
-    private double[] BubbleIteration(double arr[]) {
+    private double[] runBubbleIteration(double arr[]) {
         // single iteration method
 
         double temp;
@@ -23,12 +23,12 @@ public class BubbleSort {
         return arr;
     }
 
-    public double[] Sorting(double arr[]) {
+    public double[] runSorting(double arr[]) {
         // array sorting method
 
         for (int j=0; j<arr.length-1-1; j++)
         {
-            BubbleIteration(arr);
+            this.runBubbleIteration(arr);
         }
         return arr;
     }
