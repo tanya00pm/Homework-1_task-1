@@ -9,15 +9,14 @@ public class BubbleSort {
     private double[] runBubbleIteration(double arr[]) {
         // single iteration method
 
-        double temp;
-
         for (int i = arr.length-1; i >= 0; i--)
         {
             if(i > 0 && arr[i] < arr[i-1])
             {
-                temp = arr[i];
-                arr[i] = arr[i-1];
-                arr[i-1]= temp;
+                arr[i] = arr[i] + arr [i-1];
+                arr[i-1] = arr [i-1]  - arr[i];
+                arr[i-1] = - arr [i -1];
+                arr[i] = arr[i] - arr [i -1];
             }
         }
         return arr;
